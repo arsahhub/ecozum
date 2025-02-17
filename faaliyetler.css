@@ -1,0 +1,106 @@
+body {
+    
+    background-image: 
+     linear-gradient(
+       rgba(0, 0, 0, 0.604),  
+       rgba(0, 0, 0, 0.907)
+     ), 
+     url(/gör/bcdeneme2.jpg);
+     /* background-image: url(/gör/bcdeneme2.jpg); */
+     background-size: cover;
+     background-attachment: fixed;
+     background-position: 50%;
+     transition: 0.5s;
+     line-height: 1.6;
+     color: #ffffff;    
+ }
+
+/* Sağ Kenar Menüsü */
+.side-menu-left {
+    position: fixed;
+    right: -230px; /* Menü başlangıçta gizli */
+    height: 80%;
+    top: 110px;
+    background: linear-gradient(to top,#6776f7,#bbc1f7,#bbc1f7,#6776f7);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    z-index: 1000;
+    width: 250px; /* Menü genişliği */
+    transition:  0.3s;
+    animation:infinite 8s merhabı;
+    animation-delay: 2s;
+    overflow-y: scroll;
+    
+}
+
+@keyframes merhabı{
+    15%{transform: translatex(-10px);}
+    17%{transform: translatex(0);}
+    100%{transform: 0;}
+}
+
+.side-menu-left:hover {
+    right: -19px; /* Fare üzerine gelince menü açılsın */
+    animation: none;
+}
+
+.side-menu-left ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.side-menu-left ul li {
+    margin-bottom: 15px;
+}
+
+.side-menu-left ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+}
+
+.side-menu-left ul li a:hover {
+    color: #ffffff;
+}
+
+.fullscreen-section {
+    height: 730px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    
+}
+
+
+.fullscreen-section .content {
+    max-width: 1200px;
+    width: 100%;
+    padding: 20px;
+}
+
+.fullscreen-section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    width: 800px;
+}
+
+.fullscreen-section h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #9e9e9e;
+}
+
+.fullscreen-section p {
+    font-size: 1.5rem;
+    color: #9c9c9c;
+    line-height: 1.8;
+}
+

@@ -1,0 +1,172 @@
+
+
+body {
+    
+    background-color: rgb(58, 58, 58);
+ 
+}
+
+ /* Form Stili */
+ .form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 90px 20px;
+    background-image: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.304),  
+      rgba(0, 0, 0, 0.507)
+    ),  url(/gör/ibc.jpeg); /* Arkaplan resmi */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    gap: 50px;
+    
+}
+
+.form::after{
+    content: "";
+    position: absolute;
+    top:125px;
+    z-index:3 ;
+    width: 100%;
+    height: 80px;
+    background: linear-gradient(to top,transparent,rgba(58, 58, 58, 0.705),rgb(58,58,58));
+}
+
+.form-container {
+    background-color: rgba(255, 255, 255, 0.2); /* Hafif şeffaf beyaz */
+    backdrop-filter: blur(50px); /* Blur efekti */
+    padding: 40px;
+    border-radius: 19px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Hafif çerçeve */
+    z-index: 5;
+    min-height: 720px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.15);
+}
+
+.form-container h2 {
+    text-align: center;
+    font-size: 28px;
+    color: #2c3e50;
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+
+.form-container h1{
+    text-align: left;
+    font-size: 18px;
+    color: #2c3e50;
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+
+.form-container p{
+    text-align: left;
+    font-size: 20px;
+    color: #2b2b2b;
+    margin-bottom: 30px;
+    font-weight: 700; 
+    
+}
+
+.form-container a{
+    text-decoration: none;
+}
+
+.form-container p:hover{
+    text-decoration: underline;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color:  #2c3e50;
+    font-weight: 600;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid rgba(44, 62, 80, 0.3);
+    border-radius: 6px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+    
+    background-color: rgba(255, 255, 255, 0); /* Hafif şeffaf beyaz */
+}
+::placeholder{
+    color: #273747;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border-color: #1abc9c;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.356); /* Odaklandığında daha opak */
+}
+
+textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #1abc9c;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #16a085;
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+.map{
+    width: 100%;
+    height: 700px;
+    position: relative;
+    background-color: #131313;
+}
+.map iframe{
+    width: 100%;
+    height: 100%;
+}
+
+
+@media screen and (max-width: 888px){
+
+    .form::after{
+        top: 135px;
+    }
+
+}
