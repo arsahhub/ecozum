@@ -139,7 +139,7 @@ function startAutoplay() {
         if (!isHovered) {
             goToNext();
         }
-    }, 5000);
+    }, 7000);
 }
 
 function stopAutoplay() {
