@@ -49,8 +49,8 @@ function scrollToTop() {
 window.addEventListener("scroll", () => {
 const scr= document.getElementById('scr')
 if(window.scrollY > 10){
-    scr.style.right="35px";
+    scr.style.right="50px";
 }else{
-    scr.style.right="-35px";}
+    scr.style.right="-50px";}
 
 })
