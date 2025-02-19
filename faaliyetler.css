@@ -5,7 +5,7 @@ body {
        rgba(0, 0, 0, 0.604),  
        rgba(0, 0, 0, 0.907)
      ), 
-     url(/gör/bcdeneme2.jpg);
+     url(gör/bcdeneme2.jpg);
      /* background-image: url(/gör/bcdeneme2.jpg); */
      background-size: cover;
      background-attachment: fixed;
