@@ -5,7 +5,7 @@ body {
        rgba(0, 0, 0, 0.404),  
        rgba(0, 0, 0, 0.507)
      ), 
-     url(gör/bcdeneme2.jpg);
+     url(/gör/bcdeneme2.jpg);
      /* background-image: url(/gör/bcdeneme2.jpg); */
      background-size: cover;
      background-attachment: fixed;
@@ -61,6 +61,7 @@ body {
     color: #2c3e50;
     font-weight: bolder;
     margin: 0;
+    text-align: right;
 }
 .referans-kutu:nth-child(1) p{
     color: white;
@@ -85,6 +86,9 @@ body {
         max-width: 39vw;
         min-width: 39vw;
         height: 39vw;
+    }
+    .referans-kutu p{
+        font-size: 15px;
     }
 }
 

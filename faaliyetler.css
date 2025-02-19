@@ -13,18 +13,21 @@ body {
      transition: 0.5s;
      line-height: 1.6;
      color: #ffffff;    
+     
  }
 
-/* Sağ Kenar Menüsü */
+
+
+
 .side-menu-left {
     position: fixed;
-    right: -230px; /* Menü başlangıçta gizli */
+    right: -237px; /* Menü başlangıçta gizli */
     height: 80%;
     top: 110px;
     background: linear-gradient(to top,#6776f7,#bbc1f7,#bbc1f7,#6776f7);
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    padding: 20px;
+    padding: 30px;
     z-index: 1000;
     width: 250px; /* Menü genişliği */
     transition:  0.3s;
@@ -41,7 +44,7 @@ body {
 }
 
 .side-menu-left:hover {
-    right: -19px; /* Fare üzerine gelince menü açılsın */
+    right: 0px; /* Fare üzerine gelince menü açılsın */
     animation: none;
 }
 
@@ -49,6 +52,7 @@ body {
     list-style: none;
     padding: 0;
     margin: 0;
+    margin-left: 10px;
 }
 
 .side-menu-left ul li {

@@ -4,7 +4,8 @@ body {
      linear-gradient(
        rgba(0, 0, 0, 0.404),  
        rgba(0, 0, 0, 0.507)
-     ), url(gör/bcdeneme2.jpg);
+     ), 
+     url(/gör/bcdeneme2.jpg);
      /* background-image: url(/gör/bcdeneme2.jpg); */
      background-size: cover;
      background-attachment: fixed;
@@ -25,7 +26,6 @@ body {
 
 .slider-container {
     
-    backdrop-filter: blur(155px);
     position: relative;
 }
 
@@ -170,6 +170,22 @@ body {
 .dot.active {
     background-color: white;
     transform: scale(1.25);
+}
+
+@media screen and (max-width:888px) {
+
+    .nav-button {
+        width: 6vw;
+        height: 6vw;
+    }
+
+    .slider-container{
+        transform: scale(1.29);
+        margin-bottom: 50px;
+    }
+    .overlay p{
+        font-size: 2.50vw;
+    }
 }
 
 

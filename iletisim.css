@@ -17,7 +17,7 @@ body {
     linear-gradient(
       rgba(0, 0, 0, 0.304),  
       rgba(0, 0, 0, 0.507)
-    ),  url(gör/ibc.jpeg); /* Arkaplan resmi */
+    ),  url(/gör/ibc.jpeg); /* Arkaplan resmi */
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
