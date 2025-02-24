@@ -5,7 +5,7 @@ body {
        rgba(0, 0, 0, 0.404),  
        rgba(0, 0, 0, 0.507)
      ), 
-     url(gör/bcdeneme2.jpg);
+     url(/gör/bcdeneme2.jpg);
      /* background-image: url(/gör/bcdeneme2.jpg); */
      background-size: cover;
      background-attachment: fixed;
@@ -14,18 +14,21 @@ body {
      line-height: 1.6;
      color: #ffffff;    
  }
-.box{
 
+
+.box{
+    
+    width:100%;
+    background-color: #2e2d2da2;
     padding: 3vw ;
     display: flex;
     align-items: center;
     justify-content: center;
-    /* background-color: #111827; */
+
     
 }
 
 .slider-container {
-    
     position: relative;
 }
 
@@ -172,7 +175,369 @@ body {
     transform: scale(1.25);
 }
 
+/* Banner Stili */
+.banner {
+    position: relative;
+    margin-top: 50px;
+    width: 100%;
+    height: 470px;
+    overflow: hidden;
+    background-image: url(gör/anasayfaa1.png);
+    background-size: cover;
+    background-position: 50%;
+
+}   
+
+
+
+
+.slogan {
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    font-size: 2.5vw;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.slogan p {
+    margin-left: 30vw;
+    text-align: justify;
+    animation: normal 5s bk;
+    
+}
+
+@keyframes bk {
+    0%{display: none;}
+    0%{translate:1900px ;}
+    50%{display: flex;}
+    49.9%{translate:1900px ;}
+    70%{translate:-30px;}
+    100%{translate:0px;}
+    
+}
+
+/* İstatistikler Bölümü Stili */
+.stats-section {
+    background-color: rgba(0, 0, 0, 0.7); /* Arka plan rengi */
+    padding: 4vw 0;
+    text-align: center;
+    color: #ffffff;
+}
+
+.stats-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.stat-item {
+    flex: 1 1 200px;
+    margin: 1vw;
+    padding: 2vw;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.stat-item:hover {
+    transform: scale(1.05);
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.stat-item h2 {
+    font-size: 3vw;
+    margin-bottom: 1vw;
+    color: #ffffff;
+}
+
+.stat-item p {
+    font-size: 1.5vw;
+    color: #ffffff;
+}
+
+
+
+.homenü{
+    display: flex;
+    width: 100%;
+    height: auto;
+    background-color: #35a9dead;
+    padding:3vw 3vw ;
+    align-items: baseline;
+    justify-content: space-around;
+    flex-wrap: wrap-reverse;
+    gap: 20px;
+    
+}
+
+.text{
+    width: 600px;
+    height: 500px;
+    padding: 0 2vw;
+
+}
+
+.text h2{
+    color: #464646;
+    text-align: center;
+    font-size: 2em;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+.hoev{
+    width: 650px;
+    height: 570px;
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+    justify-content: center;
+}
+
+.hoev h2 {
+    font-size: 2em;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: #464646;
+    text-align: center;
+}
+.text p{
+    color: #333333;
+    font-size: 1.2em;
+}
+
+.hmenu li{
+    color: #d6d6d6;
+    padding-bottom: 5px;
+}
+
+
+
+.hdrop{
+    background-image: url(gör/evgör2.png);
+    display: flex;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 650px;
+    height: 480px;
+    position: relative;
+    
+
+}
+
+.hmenu{
+    display: none;
+    
+    position: absolute;
+    width: 250px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    padding: 5px 30px;
+    gap: 15px;
+    margin-top:40px ;
+    z-index: 1000;
+    border-radius: 10px;
+    transition: 0.3s;
+    transform: translate(-60%);
+   
+    
+
+}
+.hmac {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: absolute;
+    cursor: pointer;
+
+}
+
+.banyo{
+    left: 29.5em;
+    top: 8.3em;
+    background-color: #3e28ff;
+    box-shadow: 3px 6px 6px 3px rgba(8, 5, 58, 0.548);
+    background-image: url(gör/bathtub.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 80%;
+}
+
+.catı{
+    left: 21em;
+    top: 2.3em;
+    background-color: #eb4402;
+    box-shadow: 3px 6px 6px 3px rgba(8, 5, 58, 0.548);
+    background-image: url(gör/home.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 80%;
+}
+
+.yoda{
+    left: 13.3em;
+    top: 10em;
+    background-color: #cc0202;
+    box-shadow: 3px 6px 6px 3px rgba(8, 5, 58, 0.548);
+    background-image: url(gör/badroom.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 80%;
+}
+
+.mutfak{
+    left: 14em;
+    top: 15em;
+    background-color: #c800cf;
+    box-shadow: 3px 6px 6px 3px rgba(8, 5, 58, 0.548);
+    background-image: url(gör/cutlery.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 70%;
+}
+
+
+.salon{
+    left: 21em;
+    top: 15em;
+    background-color: #00a8c5;
+    box-shadow: 3px 6px 6px 3px rgba(8, 5, 58, 0.548);
+    background-image: url(gör/couch.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 80%;
+}
+
+.garaj{
+    left: 33em;
+    top: 12.9em;
+    background-color: #009c00;
+    box-shadow: 3px 6px 6px 3px rgba(8, 5, 58, 0.548);
+    background-image: url(gör/garage.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 70%;
+}
+.hmac:hover + .hmenu,
+.hmenu:hover {
+    display: block;
+}
+
+
+.hmenu h1{
+    color: #2e2d2d;
+    text-align: center;
+    font-size: 25px;
+    padding-bottom: 6px;
+}
+
+
+.container { 
+    width: 100%; 
+    height: auto;
+    margin: auto; 
+    padding: 20px; 
+    background: #bdbdbda8;  
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    color: rgb(61, 61, 61);
+    flex-direction: column-reverse;
+    display: flex;
+}
+.tabs { 
+    display: flex; 
+    justify-content: space-evenly; 
+    
+    padding: 10px; 
+
+}
+.tab { 
+    width: 50px;
+    height: 50px;
+    cursor: pointer; 
+    transition: 0.3s; 
+    background-position: center;
+    background-size: 90%;
+    background-repeat: no-repeat;
+}
+
+.ev{
+    background-image: url(gör/home1.png);
+}
+
+.is{
+    background-image: url(gör/workplace.png);
+}
+
+.apartman{
+    background-image: url(gör/apartment.png);
+}
+
+.arac{
+    background-image: url(gör/car.png);
+}
+
+.gemi{
+    background-image: url(gör/boat.png);
+}
+
+.okul{
+    background-image: url(gör/education.png);
+}
+
+.fabrika{
+    background-image: url(gör/factory.png);
+}
+.tab.active { 
+    scale: 1.5;
+  
+}
+
+.tab:hover { 
+    
+    transform: translateY(-10px);  
+}
+
+.tab-content { 
+    display: none; 
+    padding: 20px; 
+    margin: auto;
+    flex-direction: column;
+    gap: 20px;
+     
+}
+.tab-content.active { 
+    display: flex; 
+    
+    
+}
+
+.tab-content h2{
+    text-align: center;
+    
+}
+
+.tab-content p{
+    text-align: left;
+    max-width: 1200px;
+    height: 180px;
+    justify-content: center;
+    font-size: 1.3vw;
+}
+
 @media screen and (max-width:888px) {
+    
+    .box{
+        height: 60vw;
+
+    }
 
     .nav-button {
         width: 6vw;
@@ -181,29 +546,151 @@ body {
 
     .slider-container{
         transform: scale(1.29);
-        margin-bottom: 50px;
+        
     }
     .overlay p{
         font-size: 2.50vw;
     }
+
+    .banner {
+    
+        height: 350px;
+    }
+
+    .slogan {
+
+        width: 90%; /* Mobilde sloganın genişliğini sınırla */
+    }
+
+    .slogan p {
+        font-size: 4vw; /* Mobilde paragraf yazı boyutunu ayarla */
+    }
+
+    .stats-container {
+        flex-direction: column;
+    }
+
+    .stat-item {
+        flex: 1 1 auto;
+        margin: 2vw 0;
+    }
+
+    .stat-item h2 {
+        font-size: 6vw;
+    }
+
+    .stat-item p {
+        font-size: 3vw;
+    }
+
+    .stat-item:hover {
+        transform: none;
+        
+    }
+
+    .text{
+        width: 90%;
+        font-size: 13px;
+        height: auto;
+    
+    }
+
+    .hoev{
+        width: 450px;
+        height: 370px;
+    }
+
+    .hdrop{
+        width: 450px;
+        height: 370px;
+    }
+
+    .hmac {
+        width: 30px;
+        height: 30px;
+    }
+
+    .banyo{
+        left: 19.3em;
+        top: 5em;
+    }
+
+    .catı{
+        left: 14.5em;
+        top: 1.3em;
+    }
+
+    .yoda{
+        left: 9.5em;
+        top: 5.8em;
+    }
+
+    .mutfak{
+        left: 10em;
+        top: 9em;
+    }
+
+    .salon{
+        left: 14em;
+        top: 9em;
+    }
+
+    .garaj{
+        left: 21.8em;
+        top: 7.7em;
+    }
+
+    .tab-content p{
+        font-size: 17px;
+    }
+
+    .container{
+        height: 600px;
+    }
+
+
 }
 
+@media screen and (max-width:465px) {
+    .hoev{
+        width: 350px;
+        height: 320px;
+    }
 
+    .hdrop{
+        width: 350px;
+        height: 320px;
+    }
 
+    .banyo{
+        left: 16em;
+        top: 4em;
+    }
 
+    .catı{
+        left: 10.5em;
+        top: 1.3em;
+    }
 
+    .yoda{
+        left: 6.7em;
+        top: 5em;
+    }
 
+    .mutfak{
+        left: 7.8em;
+        top: 7.5em;
+    }
 
+    .salon{
+        left: 11em;
+        top: 7em;
+    }
 
+    .garaj{
+        left: 16.3em;
+        top: 6em;
+    }
 
-
-
-
-
-
-
-
-
-
-
+}
 

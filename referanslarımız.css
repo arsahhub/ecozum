@@ -5,7 +5,7 @@ body {
        rgba(0, 0, 0, 0.404),  
        rgba(0, 0, 0, 0.507)
      ), 
-     url(gör/bcdeneme2.jpg);
+     url(/gör/bcdeneme2.jpg);
      /* background-image: url(/gör/bcdeneme2.jpg); */
      background-size: cover;
      background-attachment: fixed;
@@ -22,7 +22,7 @@ body {
     gap: 20px;
     padding: 40px 20px;
     max-width: 80%;
-    margin: 0 auto;
+    margin: 50px auto;
 }
 
 .referans-kutu {
@@ -70,7 +70,12 @@ body {
 .referans-kutu:nth-child(1){
     background-color: #292929;
 }
-
+.referans-kutu:nth-child(4){
+    background-color: #292929;
+}
+.referans-kutu:nth-child(4) p{
+    color: white;
+}
 .referans-kutu h2{
     color: black;
     font-size: 1em;

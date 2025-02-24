@@ -17,7 +17,7 @@ body {
     linear-gradient(
       rgba(0, 0, 0, 0.304),  
       rgba(0, 0, 0, 0.507)
-    ),  url(gör/ibc.jpeg); /* Arkaplan resmi */
+    ),  url(/gör/ibc.jpeg); /* Arkaplan resmi */
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -31,8 +31,9 @@ body {
     top:125px;
     z-index:3 ;
     width: 100%;
-    height: 80px;
+    height: 30px;
     background: linear-gradient(to top,transparent,rgba(58, 58, 58, 0.705),rgb(58,58,58));
+
 }
 
 .form-container {

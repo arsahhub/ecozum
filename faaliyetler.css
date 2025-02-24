@@ -5,7 +5,7 @@ body {
        rgba(0, 0, 0, 0.604),  
        rgba(0, 0, 0, 0.907)
      ), 
-     url(gör/bcdeneme2.jpg);
+     url(/gör/bcdeneme2.jpg);
      /* background-image: url(/gör/bcdeneme2.jpg); */
      background-size: cover;
      background-attachment: fixed;
@@ -21,7 +21,7 @@ body {
 
 .side-menu-left {
     position: fixed;
-    right: -237px; /* Menü başlangıçta gizli */
+    right: -235px; /* Menü başlangıçta gizli */
     height: 80%;
     top: 110px;
     background: linear-gradient(to top,#6776f7,#bbc1f7,#bbc1f7,#6776f7);
@@ -48,6 +48,7 @@ body {
     animation: none;
 }
 
+
 .side-menu-left ul {
     list-style: none;
     padding: 0;
@@ -69,10 +70,22 @@ body {
 .side-menu-left ul li a:hover {
     color: #ffffff;
 }
+.fmain{
+    margin: 0 auto;
+    height: auto;
+    width: 90%;
+    display: flex;
+    
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
 
 .fullscreen-section {
-    height: 730px;
+    height: auto;
+    
     display: flex;
+    width: 45%;
+    min-width: 340px;
     justify-content: center;
     align-items: center;
     text-align: center;

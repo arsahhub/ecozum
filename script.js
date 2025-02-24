@@ -54,3 +54,11 @@ if(window.scrollY > 10){
     scr.style.right="-40px";}
 
 })
+
+
+window.addEventListener("scroll", () => {
+const navc = document.querySelector('.navbar');
+if(window.scrollY>20){
+    navc.style.backgroundColor="rgba(0, 0, 0, 0.500)";
+}else{navc.style.backgroundColor="transparent";}
+})
